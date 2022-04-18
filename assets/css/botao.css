@@ -1,0 +1,27 @@
+
+.botao--padrao {
+    background-color: #2A7AE4;
+    text-decoration: none;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media screen and (min-width:0) {
+    .botao--login {
+        font-weight: 600;
+        font-size: 14px;
+        color: #2A7AE4;
+        background-color: #FFF;
+        border: 1px solid #2A7AE4;
+        padding: .75rem 1.5rem;
+        text-decoration: none;
+        box-sizing: border-box;
+        text-align: center;
+        width: 360px;
+        padding-left:1rem;
+    }
+}

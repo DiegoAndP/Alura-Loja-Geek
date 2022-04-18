@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <script type="text/javascript" src="./assets/js/data.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/botao.css">
+    <link rel="stylesheet" href="assets/css/topo.css">
+    <link rel="stylesheet" href="assets/css/dropdown.css">
+    <link rel="stylesheet" href="assets/css/destaques.css">
+    <link rel="stylesheet" href="assets/css/catalogo.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+    <link rel="stylesheet" href="assets/css/rodape.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="topo__conteudo">
+            <a href="./index.html"><img src="./assets/img/Logo.svg" alt="Logo Alura Geek" class="topo__logo"></a>
+            <input class="topo__busca" type="search" name="busca" placeholder="O que deseja encontrar?">
+        </div>
+        <a href="#" class="topo__botao botao--login" >Log in</a>
+        <div class="topo__dropdown">
+            <span class="topo__span"></span>
+            <div class="topo__dropcontent">
+                <input class="topo__buscadrop topo__busca" type="search" name="busca" placeholder="O que deseja encontrar?">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="login">
+            <form class="login__form" action="" method="post">
+            <h2 class="login__titulo">Iniciar Sessão</h2>
+            <input class="login__email" required placeholder="Escreva seu nome" type="email" required>
+            <input class="login__password" required placeholder="Escreva sua senha" type="password" required>
+            <button class="login__button botao--padrao" type="submit">Entrar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="contato">
+        <div class="contato__container">
+            <img src="./assets/img/Logo.svg" alt="" class="contato__logo">
+            <ul class="contato__lista">
+                <li class="contato__lista-itens"><a href="#">Quem somos</a></li>
+                <li class="contato__lista-itens"><a href="#">Política de Privacidade</a></li>
+                <li class="contato__lista-itens"><a href="#">Programa fidelidade</a></li>
+                <li class="contato__lista-itens"><a href="#">Nossas lojas</a></li>
+                <li class="contato__lista-itens"><a href="#">Quero ser franqueado</a></li>
+                <li class="contato__lista-itens"><a href="#">Anuncie aqui</a></li>
+            </ul>
+        </div>
+        <form action="" method="post" class="contato__form">
+            <p class="contato__titulo">Fale Conosco</p>
+            <div class="contato__container-nome">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" class="contato__nome">
+            </div>
+            <textarea name="" placeholder="Escreva a sua mensagem" cols="30" rows="10" class="contato__mensagem"></textarea>
+            <button class="contato__enviar botao--padrao">Enviar Mensagem</button>
+        </form>
+    </footer>
+    <footer class="rodape">
+        <p class="rodape__descricao">Desenvolvido por Diego Andrade <br> 2022</p>
+    </footer>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+</html>

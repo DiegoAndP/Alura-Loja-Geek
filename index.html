@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual Alura Geek</title>
+    <script type="text/javascript" src="./assets/js/data.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/botao.css">
+    <link rel="stylesheet" href="assets/css/topo.css">
+    <link rel="stylesheet" href="assets/css/dropdown.css">
+    <link rel="stylesheet" href="assets/css/destaques.css">
+    <link rel="stylesheet" href="assets/css/catalogo.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+    <link rel="stylesheet" href="assets/css/rodape.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="topo__conteudo">
+            <a href=""><img src="./assets/img/Logo.svg" alt="Logo Alura Geek" class="topo__logo"></a>
+            <input class="topo__busca" type="search" name="busca" placeholder="O que deseja encontrar?">
+        </div>
+        <a href="./login.html" class="topo__botao botao--login" >Log in</a>
+            <div class="topo__dropdown">
+                <img class="topo__icon" src="./assets/img/search.svg" alt="Ícone Procura">
+                <div class="topo__dropcontent">
+                    <input class="topo__buscadrop topo__busca" type="search" name="busca" placeholder="O que deseja encontrar?">
+                </div>
+            </div>
+    </header>
+    <main>
+        <section class="destaques">
+            <div class="destaques__container">
+                <div class="destaques__slide"></div>
+                    <div class="destaques__info">
+                        <p class="destaques__titulo">Dezembro Promocional</p>
+                        <p class="destaques__descricao">Produtos selecionados com 33% de desconto.</p>
+                        <a href="#" class="destaques__botao botao--padrao">Ver Consoles</a href="#">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalogo">
+            <div class="catalogo__conteudo">
+                <div class="catalogo__topo">
+                    <h2 class="catalogo__titulo">Buzunfa!</h2>
+                    <a class="catalogo__vertudo" href="">Ver tudo</a>
+                </div>
+                <div class="catalogo__produto produto-starwars">
+                    <!-- <img src="" alt="" class="catalogo__imagem">
+                    <p class="catalogo__nome"></p>
+                    <p class="catalogo__valor"></p>
+                    <a href="" class="catalogo__link"></a> -->
+                </div>
+       </section>
+        <section class="catalogo">
+            <div class="catalogo__conteudo">
+                <div class="catalogo__topo">
+                    <h2 class="catalogo__titulo">Consoles</h2>
+                    <a class="catalogo__vertudo" href="#">Ver tudo</a>
+                </div>
+            </div>
+            <div class="catalogo__produto produto-consoles">
+            </div>
+        </section>
+        <section class="catalogo">
+            <div class="catalogo__conteudo">
+                <div class="catalogo__topo">
+                <h2 class="catalogo__titulo">Diversos</h2>
+                <a class="catalogo__vertudo" href="">Ver tudo</a>
+                </div>
+            </div>
+            <div class="catalogo__produto produto-diversos">
+
+            </div>
+        </section>
+    </main>
+    <footer class="contato">
+        <div class="contato__container">
+            <img src="./assets/img/Logo.svg" alt="" class="contato__logo">
+            <ul class="contato__lista">
+                <li class="contato__lista-itens"><a href="#">Quem somos</a></li>
+                <li class="contato__lista-itens"><a href="#">Política de Privacidade</a></li>
+                <li class="contato__lista-itens"><a href="#">Programa fidelidade</a></li>
+                <li class="contato__lista-itens"><a href="#">Nossas lojas</a></li>
+                <li class="contato__lista-itens"><a href="#">Quero ser franqueado</a></li>
+                <li class="contato__lista-itens"><a href="#">Anuncie aqui</a></li>
+            </ul>
+        </div>
+        <form action="" method="post" class="contato__form">
+            <p class="contato__titulo">Fale Conosco</p>
+            <div class="contato__container-nome">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" class="contato__nome">
+            </div>
+            <textarea name="" placeholder="Escreva a sua mensagem" cols="30" rows="10" class="contato__mensagem"></textarea>
+            <button class="contato__enviar botao--padrao">Enviar Mensagem</button>
+        </form>
+    </footer>
+    <footer class="rodape">
+        <p class="rodape__descricao">Desenvolvido por Diego Andrade <br> 2022</p>
+    </footer>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
+</html>

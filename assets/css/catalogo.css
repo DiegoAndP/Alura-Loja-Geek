@@ -1,0 +1,34 @@
+.catalogo {
+    padding: 0 1rem;
+}
+
+.catalogo__topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalogo__titulo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.catalogo__vertudo {
+    text-decoration: none;
+    font-weight: 700;
+    color: #2A7AE4;
+}
+
+.catalogo__vertudo::after {
+    content: url(../img/catalogo-vertudo.svg);
+    padding-left: .4rem;
+    width: 10.67px;
+    height: 10.67px;
+}
+
+@media screen and (min-width:1024px) {
+    .catalogo {
+        padding: 0 9.5rem;
+    }
+}

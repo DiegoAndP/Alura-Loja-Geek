@@ -1,0 +1,153 @@
+.contato {
+    background-color: #EAF2FD;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato__logo {
+    height: 50px;
+    width: 176px;
+    margin-top: 1rem;
+}
+
+.contato__lista {
+    margin-bottom: 1rem;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    padding: 0;
+}
+
+.contato__lista-itens {
+    margin-bottom: 1rem;
+}
+
+.contato__lista-itens>a {
+    text-decoration: none;
+    color:#464646;
+    font-weight: 500;
+}
+
+.contato__titulo {
+    margin: .5rem 0;
+    color:#464646;
+    font-weight: 700;
+
+}
+
+.contato__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contato__container-nome {
+    position: relative;
+    background-color: #FFF;
+    border: none;
+    height: 56px;
+    margin-bottom: 1rem;
+    width: auto;
+}
+
+.contato__container-nome label {
+    font-size: 12px;
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    color: #A2A2A2;
+    padding-left: .5rem;
+}
+
+.contato__nome {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    
+}
+
+.contato__nome::placeholder {
+    padding: 8px 16px;
+    font-size: 12px;
+}
+
+.contato__mensagem {
+    margin-bottom: .5rem;
+    resize: none;
+    border: none;
+    width: 100%;
+}
+
+.contato__mensagem::placeholder {
+    padding: 16px 12px;
+}
+
+.contato__enviar {
+    padding: 12px 1rem;
+    width: 151px;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:768px) {
+    .contato {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+        align-items: flex-start;
+    }
+
+    .contato__lista {
+        text-align: left;
+    }
+
+    .contato__lista-itens {
+        margin-bottom: 1.5rem;
+    }
+
+    .contato__form {
+        width: 494px;
+
+    }
+
+    .contato__mensagem {
+        height: 82px;
+    }
+      
+}
+
+@media screen and (min-width:1024px) {
+    .contato {
+        padding: 4rem 9.5rem
+    }
+
+    .contato__container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+
+    .contato__lista {
+        margin-right: 7rem;
+    }
+
+    .contato__form {
+        width: 560px;
+    }
+
+    .contato__enviar {
+        width: 165px;
+        height: 51px;
+    }
+}

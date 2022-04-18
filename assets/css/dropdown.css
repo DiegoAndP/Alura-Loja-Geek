@@ -1,0 +1,40 @@
+.topo__dropdown {
+    height: 20px;
+    width: 20px;
+    margin-left: 2rem;
+}
+
+.topo__icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10px 5px;
+}
+
+.topo__dropcontent {
+    height: 20px;
+    width: 20px;
+}
+
+.topo__buscadrop {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: -10px;
+    width: 70%;
+    box-shadow: 0 0 10px #2A7AE4;
+    opacity: 0.1;
+    transition:1s ease-out;
+}
+
+.topo__dropdown:hover .topo__buscadrop {
+    display: block;
+    opacity: 1;
+}
+
+@media screen and (min-width:768px) {
+    .topo__dropdown {
+        display: none;
+        
+    }
+
+}
