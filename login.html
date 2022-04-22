@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/contato.css">
     <link rel="stylesheet" href="assets/css/rodape.css">
     <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="">
 </head>
 <body>
     <header class="topo">
@@ -36,11 +37,17 @@
     </header>
     <main>
         <section class="login">
-            <form class="login__form" action="" method="post">
+            <form class="login__form" action="" method="post" data-form>
             <h2 class="login__titulo">Iniciar Sessão</h2>
-            <input class="login__email" required placeholder="Escreva seu nome" type="email" required>
-            <input class="login__password" required placeholder="Escreva sua senha" type="password" required>
-            <button class="login__button botao--padrao" type="submit">Entrar</button>
+            <div class="login__wrapper-input">
+                <input class="login__email" required placeholder="Escreva seu nome" autocomplete="username" type="email" pattern="^(.*)(@+.*)$" data-email data-tipo="email" required>
+                <span class="login__span"></span>
+            </div>
+            <div class="login__wrapper-input">
+                <input class="login__password" autocomplete="current-password" required placeholder="Escreva sua senha" type="password" pattern="^(?=.*[A-Za-z])(?=.*\d+)(?!.*[@!#$%¨&*\\]).{8,20}$" data-password data-tipo="senha" required>
+                <span class="login__span"></span>
+            </div>
+            <button class="login__button botao--padrao" data-btnlogin type="submit">Entrar</button>
             </form>
         </section>
     </main>
@@ -63,7 +70,7 @@
                 <input type="text" id="nome" class="contato__nome">
             </div>
             <textarea name="" placeholder="Escreva a sua mensagem" cols="30" rows="10" class="contato__mensagem"></textarea>
-            <button class="contato__enviar botao--padrao">Enviar Mensagem</button>
+            <button class="contato__enviar botao--padrao" >Enviar Mensagem</button>
         </form>
     </footer>
     <footer class="rodape">
@@ -71,4 +78,5 @@
     </footer>
     <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
-</html>
+<script type="text/javascript" src="./assets/js/login.js"></script>
+</html> 

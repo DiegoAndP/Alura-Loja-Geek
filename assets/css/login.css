@@ -22,12 +22,17 @@
     text-align: center;
 }
 
+.login__wrapper-input {
+    width: 100%;
+}
+
 .login__email, .login__password {
     margin-bottom: 1rem;
     width: 100%;
     border: none;
     outline-color: #2A7AE4;
     height: 41px;
+    padding-left: 1rem;
 }
 
 .login__email::placeholder, .login__password::placeholder {
@@ -35,6 +40,16 @@
     font-size: 400;
     padding-left: 12px;
 
+}
+
+.login__span {
+    height: 10px;
+    color: tomato;
+    font-weight: bolder;
+}
+
+.login__hide {
+    display: none;
 }
 
 .login__button {
