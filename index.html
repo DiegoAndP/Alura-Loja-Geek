@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/botao.css">
     <link rel="stylesheet" href="assets/css/topo.css">
     <link rel="stylesheet" href="assets/css/dropdown.css">
     <link rel="stylesheet" href="assets/css/destaques.css">
@@ -21,26 +20,31 @@
 </head>
 <body>
     <header class="topo">
-        <div class="topo__conteudo">
-            <a href=""><img src="./assets/img/Logo.svg" alt="Logo Alura Geek" class="topo__logo"></a>
-            <input class="topo__busca" type="search" name="busca" placeholder="O que deseja encontrar?">
-        </div>
-        <a href="./login.html" class="topo__botao botao--login" >Log in</a>
-            <div class="topo__dropdown">
-                <img class="topo__icon" src="./assets/img/search.svg" alt="Ícone Procura">
-                <div class="topo__dropcontent">
-                    <input class="topo__buscadrop topo__busca" type="search" name="busca" placeholder="O que deseja encontrar?">
+        <nav class="topo__nav">
+            <div class="topo__wrapper-logo">
+                <a href=""><img src="./assets/img/Logo.svg" alt="Logo Alura Geek" class="topo__logo"></a>
+                <p class="topo__logo-azul">Alura</p><p class="topo__logo-preto">Geek</p>
+            </div>
+            <div class="topo__wrapper-busca">
+                <input class="topo__busca" type="search" name="busca" placeholder="O que deseja encontrar?">
+                <div class="topo__wrapper-login">
+                    <a href="./login.html" class="topo__botao">Log in</a>
+                    <div class="topo__dropdown"></div>
                 </div>
             </div>
+            <div class="topo__dropcontent">
+                <input class="topo__buscadrop topo__busca" type="search" name="busca" placeholder="O que deseja encontrar?">
+            </div>
+        </nav>
     </header>
     <main>
         <section class="destaques">
             <div class="destaques__container">
-                <div class="destaques__slide"></div>
+                <div class="destaques__slide">
                     <div class="destaques__info">
                         <p class="destaques__titulo">Dezembro Promocional</p>
                         <p class="destaques__descricao">Produtos selecionados com 33% de desconto.</p>
-                        <a href="#" class="destaques__botao botao--padrao">Ver Consoles</a href="#">
+                        <a href="#" class="destaques__botao">Ver Consoles</a href="#">
                     </div>
                 </div>
             </div>

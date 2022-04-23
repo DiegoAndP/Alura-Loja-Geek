@@ -1,8 +1,22 @@
 :root {
     font-family: 'Raleway','sans-serif';
-
+    --background-cinza: #F5F5F5;
+    --background-cinza-claro:#E5E5E5;
+    --botao-azul: #2A7AE4;
+    --texto-titulo: #464646;
+    --placeholder-cor:#A2A2A2;
+    --texto-azul: #2A7AE4;
+    --background-azul:#EAF2FD;
+    --branco: #FFF;
 }
 
 body {
-    background-color: #FFF;
+    background-color: var(--background-cinza);
+    /* box-sizing: border-box; */
+
 }
+
+body::placeholder {
+    color: var(--placeholder-cor);
+}
+

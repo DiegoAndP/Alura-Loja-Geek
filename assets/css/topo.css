@@ -2,27 +2,64 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--branco);
+}
+
+.topo__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
-    margin: 1rem;
-    position: relative;
+    width: 100%;
 }
 
-.topo__logo {
-    width: 100px;
-    height: 28px;
-    margin-right: 1rem;
-}
-
-.topo__conteudo {
-    width: 50%;
+.topo__wrapper-logo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    justify-content: start;
+}
+.topo__logo {
+    height: 16.33px;
+    width: 22.74px;
+}
+
+
+.topo__logo-azul {
+    color: var(--texto-azul);
+    font-weight: bolder;
+    margin-left:5px;
+}
+
+.topo__logo-preto {
+    color: var(--texto-titulo);
+    font-weight: bolder;
+}
+
+.topo__botao {
+    box-sizing: border-box;
+    color: var(--texto-azul);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 14px;
+    padding: 12px 47.5px;
+    border: 1.5px solid var(--botao-azul);
+    text-decoration: none;
+    background-color: var(--branco);
+}
+
+.topo__wrapper-busca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .topo__busca {
     margin-left: 2rem;
-    background-color: #F5F5f5;
+    background-color: var(--background-cinza);
     border-radius: 20px;
     border: none;
     background-image: url(.././img/search_gray.svg);
@@ -37,6 +74,13 @@
     padding-left: 0 1rem;
 }
 
+.topo__wrapper-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @media screen and (min-width:0) {
     .topo__busca {
         display: none;
@@ -45,34 +89,45 @@
 
 @media screen and (min-width:768px) {
     .topo__busca {
-        display: flex;
+        display: block;
         width: 272px;
     }
 
     .topo {
-        margin: 1rem 2rem;
+        padding: 1rem 2rem;
     }
 
     .topo__botao {
         width: 166px;
+        padding: 12px 60px;
     }
 
-    .topo__botao::placeholder {
-        color: #a2a2a2;
+    .topo__wrapper-busca  {
+        flex-grow:1;
     }
 }
 
 @media screen and (min-width:1024px) {
     .topo {
-        margin: 1rem 9.5rem;
+        padding: 1rem 9.5rem;
     }
 
     .topo__logo {
-        height: 50px;
-        width: 176px;
+        height: 40.02px;
+        width: 29.17px;
     }
+
+    .topo__logo-azul,.topo__logo-preto {
+        font-size: 26px;
+    }
+
 
     .topo__busca {
         width: 393px;
+    }
+
+    .topo__botao {
+        width: 182px;
+        height: 51px;
     }
 }

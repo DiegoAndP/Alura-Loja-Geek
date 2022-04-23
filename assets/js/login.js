@@ -21,7 +21,8 @@ const mensagensErro = {
     email: {
         valueMissing: "O campo email não pode estar vazio.",
         valueMismatch: "O email não é válido" ,
-        patternMismatch: "O email precisa ter '@' e provedor."
+        patternMismatch: "O email precisa ter '@' e provedor.",
+        typeMismatch: "Complete com o provedor e domínio."
     },
     senha: {
         valueMissing: "O campo senha não pode estar vazio.",
@@ -59,7 +60,6 @@ function mostraErros (inputTipo, input) {
             mensagem = mensagensErro[inputTipo][erros];
         };
     })
-    console.log(mensagem);    
     return mensagem;
 };
 
