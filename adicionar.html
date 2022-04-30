@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/botao.css">
     <link rel="stylesheet" href="assets/css/topo.css">
     <link rel="stylesheet" href="assets/css/dropdown.css">
     <link rel="stylesheet" href="assets/css/destaques.css">
@@ -19,73 +18,48 @@
     <link rel="stylesheet" href="assets/css/contato.css">
     <link rel="stylesheet" href="assets/css/rodape.css">
     <link rel="stylesheet" href="assets/css/adicionar/botao-adiciona.css">
-    <link rel="stylesheet" href="assets/css/adicionar/adiciona.css">
+    <link rel="stylesheet" href="assets/css/adiciona.css">
 </head>
 <body>
-    <header class="topo">
-        <div class="topo__conteudo">
-            <a href=""><img src="./assets/img/Logo.svg" alt="Logo Alura Geek" class="topo__logo"></a>
-            <input class="topo__busca" type="search" name="busca" placeholder="O que deseja encontrar?">
-        </div>
-        <a href="#" class="topo__botao-administrador botao--login" >Menu Administrador</a>
-            <div class="topo__dropdown">
-                <img class="topo__icon" src="./assets/img/search.svg" alt="Ícone Procura">
-                <div class="topo__dropcontent">
-                    <input class="topo__buscadrop topo__busca" type="search" name="busca" placeholder="O que deseja encontrar?">
-                </div>
-            </div>
-    </header>
+    <header class="topo"></header>
     <main>
         <section class="adiciona">
             <div class="adiciona__container">
              <h1 class="adiciona__titulo">Adicionar novo produto</h1>
-                <ul class="adiciona__form">
+                <form class="adiciona__form">
                     <div class="adiciona__form-container">
-                        <input type="file" class="adiciona__imagem">
-                        <p>Ou</p>
-                        <input type="file" class="adiciona__procura">
+                        <div class="adiciona__wrapper">
+                                <div class="adiciona__logo"></div>
+                                <span class="adiciona__texto">Arraste ou clique para adicionar uma imagem ao produto</span>
+                                <input type="file" name="" data-imagem class="adiciona__imagem" id="">
+                        </div>
                     </div>
-                    <div class="adiciona__wrapper wrapper-produto">
+                    <div class="adiciona__wrapper-input wrapper-produto">
                         <label for="produto">Nome do Produto</label>
-                        <input id="produto" class="adiciona__produto" type="text">
+                        <input id="produto" class="adiciona__produto" type="text" data-tipo="produto" pattern="^(.){5,30}$" required>
+                        <span class="produto__span"></span>
                     </div>
-                    <div class="div adiciona__wrapper wrapper-preco">
+                    <div class="div adiciona__wrapper-input wrapper-preco">
                         <label for="preco">Preço do Produto</label>
-                        <input id="preco" class="adiciona__preco" type="text">
+                        <input id="preco" class="adiciona__preco" type="text" data-tipo="preco" pattern="^([0-9]+,+[0-9]{2})$" placeholder="00,00" required>
+                        <span class="produto__span"></span>
+                    </div>
+                    <div class="div adiciona__wrapper-input wrapper-categoria">
+                        <label for="preco">Categoria do Produto</label>
+                        <input id="categoria" class="adiciona__categoria" type="text" data-tipo="categoria" pattern="^(.){5,15}$" placeholder="Insira a categoria do Produto" required>
+                        <span class="produto__span"></span>
                     </div>
                     <textarea class="adiciona__texto" placeholder="Descrição do Produto" name="" id="" cols="30" rows="10"></textarea>
-                    <button class="adiciona__botao">Adicionar Produto</button>
-                </ul>
+                    <button type="submit" class="adiciona__botao">Adicionar Produto</button>
+                </form>
             </div>    
     </section>
 
     </main>
-    <footer class="contato">
-        <div class="contato__container">
-            <img src="./assets/img/Logo.svg" alt="" class="contato__logo">
-            <ul class="contato__lista">
-                <li class="contato__lista-itens"><a href="#">Quem somos</a></li>
-                <li class="contato__lista-itens"><a href="#">Política de Privacidade</a></li>
-                <li class="contato__lista-itens"><a href="#">Programa fidelidade</a></li>
-                <li class="contato__lista-itens"><a href="#">Nossas lojas</a></li>
-                <li class="contato__lista-itens"><a href="#">Quero ser franqueado</a></li>
-                <li class="contato__lista-itens"><a href="#">Anuncie aqui</a></li>
-            </ul>
-        </div>
-        <form action="" method="post" class="contato__form">
-            <p class="contato__titulo">Fale Conosco</p>
-            <div class="contato__container-nome">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" class="contato__nome">
-            </div>
-            <textarea name="" placeholder="Escreva a sua mensagem" cols="30" rows="10" class="contato__mensagem"></textarea>
-            <button class="contato__enviar botao--padrao">Enviar Mensagem</button>
-        </form>
-    </footer>
-    <footer class="rodape">
-        <p class="rodape__descricao">Desenvolvido por Diego Andrade <br> 2022</p>
-    </footer>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <footer class="contato"></footer>
+    <footer class="rodape"></footer>
 </body>
-
+<script type="module" src="./assets/js/main.js"></script>
+<script type="text/javascript" src="./assets/js/adicionar.js"></script>
+<script type="text/javascript" src="./assets/js/modulos/dragimagem.js"></script>
 </html>

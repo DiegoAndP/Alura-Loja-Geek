@@ -8,11 +8,11 @@
     --texto-azul: #2A7AE4;
     --background-azul:#EAF2FD;
     --branco: #FFF;
+    --preto-30: #c8c8c8;
 }
 
 body {
     background-color: var(--background-cinza);
-    /* box-sizing: border-box; */
 
 }
 

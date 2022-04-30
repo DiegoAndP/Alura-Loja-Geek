@@ -1,9 +1,3 @@
-.adiciona {
-    background-color: #E5E5E5;
-    width: 100vw;
-    
-}
-
 .adiciona__container {
     display: flex;
     flex-direction: column;
@@ -26,44 +20,96 @@
     margin: 0;
 }
 
-.adiciona__imagem {
-    height: 134px;
-    background-color: #C8C8C8;
-    width: 100%;
+.adiciona__form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
+
 
 .adiciona__wrapper{
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--branco);
+    border: 4px dashed var(--preto-30);
+    padding: 2rem;
+    border-radius: 10px;
 }
 
-.adiciona__wrapper label {
+.adiciona__wrapper-ativo {
+    border: solid var(--preto-30);
+}
+
+.adiciona__logo {
+    background-image: url('../img/upload_img.svg');
+    background-size: cover;
+    height: 32px;
+    width: 32px;
+}
+
+.adiciona__texto {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    color: var(--placeholder-cor);
+}
+
+.adiciona__imagem {
+    display:none;
+}
+
+.adiciona__thumb {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.adiciona__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--branco);
+    background-color: rgba(0,0,0,0.75);
+    text-align: center;
+    padding: 0.25rem 0;
+    width: 100%;
+}
+
+.adiciona__wrapper-input label {
     padding: .5rem 0 0 .5rem;
-    color: #A2A2A2;
+    color: var(--placeholder-cor);
     font-weight: 400;
     font-size: 12px;
 }
 
-.adiciona__wrapper input {
+.adiciona__wrapper-input {
+    display: flex;
+    flex-direction: column;
     border:none;
-    background-color: none;
+    background-color: var(--branco);
+    width: 100%;
 }
 
-.adiciona__produto {
+.adiciona__produto,.adiciona__preco,.adiciona__categoria {
     height: 56px;
+    border:none;
 }
 
-.adiciona__preco {
-    height: 56px;
-} 
+
+
 .adiciona__texto {
     height: 82px;
     resize: none;
     border:none;
 }
 .adiciona__texto::placeholder {
-    color: #A2A2A2;
+    color: var(--placeholder-cor);
     padding-left: 12px;
     padding-top: 1rem;
 }
@@ -97,6 +143,11 @@
 
     .adiciona__form-container p  {
         display:none;
+    }
+
+    .adiciona__wrapper {
+        width: 328px;
+        height: 134px;
     }
 
 }
