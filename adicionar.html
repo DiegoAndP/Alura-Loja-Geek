@@ -31,7 +31,7 @@
                         <div class="adiciona__wrapper">
                                 <div class="adiciona__logo"></div>
                                 <span class="adiciona__texto">Arraste ou clique para adicionar uma imagem ao produto</span>
-                                <input type="file" name="" data-imagem class="adiciona__imagem" id="">
+                                <input type="file" name="image-upload" data-imagem class="adiciona__imagem" required>
                         </div>
                     </div>
                     <div class="adiciona__wrapper-input wrapper-produto">
@@ -50,7 +50,7 @@
                         <span class="produto__span"></span>
                     </div>
                     <textarea class="adiciona__texto" placeholder="Descrição do Produto" name="" id="" cols="30" rows="10"></textarea>
-                    <button type="submit" class="adiciona__botao">Adicionar Produto</button>
+                    <button type="submit" class="adiciona__botao" data-submit>Adicionar Produto</button>
                 </form>
             </div>    
     </section>
@@ -60,6 +60,6 @@
     <footer class="rodape"></footer>
 </body>
 <script type="module" src="./assets/js/main.js"></script>
-<script type="text/javascript" src="./assets/js/adicionar.js"></script>
 <script type="text/javascript" src="./assets/js/modulos/dragimagem.js"></script>
+<script type="text/javascript" src="./assets/js/adicionar.js"></script>
 </html>
