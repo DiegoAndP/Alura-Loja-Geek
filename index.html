@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Virtual Alura Geek</title>
-    <script type="text/javascript" src="./assets/js/data.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,58 +17,28 @@
     <link rel="stylesheet" href="assets/css/catalogo.css">
     <link rel="stylesheet" href="assets/css/contato.css">
     <link rel="stylesheet" href="assets/css/rodape.css">
+    <link rel="stylesheet" href="assets/css/popup.css">
 </head>
+
 <body>
     <header class="topo"></header>
     <main>
-        <section class="destaques">
-            <div class="destaques__container">
-                <div class="destaques__slide">
-                    <div class="destaques__info">
-                        <p class="destaques__titulo">Dezembro Promocional</p>
-                        <p class="destaques__descricao">Produtos selecionados com 33% de desconto.</p>
-                        <a href="#" class="destaques__botao">Ver Consoles</a href="#">
-                    </div>
+        <div class="popup__wrapper popup__hidden">
+            <div class="popup__container">
+                <div class="popup__imagem"></div>
+                <div class="poup__info">
+                    <h2 class="popup__nome"></h2>
+                    <p class="popup__valor"></p>
+                    <p class="popup__descricao"></p>
                 </div>
+                <p class="popup__close">x</p>
             </div>
-        </section>
-        <section class="catalogo">
-            <div class="catalogo__conteudo">
-                <div class="catalogo__topo">
-                    <h2 class="catalogo__titulo">Star Wars</h2>
-                    <a class="catalogo__vertudo" href="">Ver tudo</a>
-                </div>
-                <div class="catalogo__produto produto-starwars">
-                    <!-- <img src="" alt="" class="catalogo__imagem">
-                    <p class="catalogo__nome"></p>
-                    <p class="catalogo__valor"></p>
-                    <a href="" class="catalogo__link"></a> -->
-                </div>
-       </section>
-        <section class="catalogo">
-            <div class="catalogo__conteudo">
-                <div class="catalogo__topo">
-                    <h2 class="catalogo__titulo">Consoles</h2>
-                    <a class="catalogo__vertudo" href="#">Ver tudo</a>
-                </div>
-            </div>
-            <div class="catalogo__produto produto-consoles">
-            </div>
-        </section>
-        <section class="catalogo">
-            <div class="catalogo__conteudo">
-                <div class="catalogo__topo">
-                <h2 class="catalogo__titulo">Diversos</h2>
-                <a class="catalogo__vertudo" href="">Ver tudo</a>
-                </div>
-            </div>
-            <div class="catalogo__produto produto-diversos">
-
-            </div>
-        </section>
+        </div>
     </main>
     <footer class="contato"></footer>
     <footer class="rodape"></footer>
 </body>
 <script type="module" src="./assets/js/main.js"></script>
+<script type="text/javascript" src="./assets/js/modulos/geraCategorias.js"></script>
+<script type="text/javascript" src="./assets/js/modulos/criaPopUp.js"></script>
 </html>

@@ -3,101 +3,120 @@
        {
           "imagem":"/assets/img/json/starwars/unsplash_6FDXGY9J6y4.png",
           "nome":"Produto XYZ",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/starwars/unsplash_epRFE_hBNjo.png",
           "nome":"Produto XYZ",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/starwars/unsplash_KeGToDVN0l4.png",
           "nome":"Produto XYZ",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/starwars/unsplash_KeGToDVN0l4.png",
           "nome":"Produto XYZ",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/starwars/unsplash_4OHkK555s1A.png",
           "nome":"Produto XYZ",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/starwars/unsplash_R8L1l9RN198.png",
           "nome":"Produto XYZ",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        }
     ],
     "consoles":[
        {
           "imagem":"/assets/img/json/consoles/unsplash_0POwK6iAiRQ.png",
           "nome":"Controle XYZ",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/consoles/unsplash_caNzzoxls8Q.png",
           "nome":"Controle XYZ",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/consoles/unsplash_ZV7lnfyQLmA.png",
           "nome":"Console XYZ",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/consoles/unsplash_wa5z9o9fgjw.png",
           "nome":"Controle XYZ",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/consoles/unsplash_Zjn4dT993-g.png",
           "nome":"Console XYZ",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/consoles/unsplash_k-xYhI3-gJM.png",
           "nome":"Game Boy Color",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        }
     ],
     "diversos":[
        {
           "imagem":"/assets/img/json/diversos/unsplash_fMP-oCze3AY.png",
           "nome":"Camisa Atari",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/diversos/unsplash_bUgaIaZysH0.png",
           "nome":"Camisa Snes",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/diversos/unsplash_sYVY_ZKwaxU.png",
           "nome":"Live Action Sonic",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/diversos/unsplash_jMT6BrgBuXU.png",
           "nome":"Controle e Console XYZ",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/diversos/unsplash_MxVkWPiJALs.png",
           "nome":"Controle e Console XYZ",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/diversos/unsplash_fMP-oCze3AY",
           "nome":"Camisa Atari",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        },
        {
           "imagem":"/assets/img/json/diversos/unsplash_r27umXAelDc.png",
           "nome":"Fantasia Pokémon Pikachu",
-          "valor":"R$60,00"
+          "valor":"R$60,00",
+          
        }
     ]
  }

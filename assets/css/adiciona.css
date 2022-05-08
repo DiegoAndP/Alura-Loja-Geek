@@ -126,6 +126,10 @@
     border: none;
 }
 
+.adiciona__botao:active {
+    margin-top: 5px;
+}
+
 @media screen and (min-width:0) {
 
     .adiciona__container {

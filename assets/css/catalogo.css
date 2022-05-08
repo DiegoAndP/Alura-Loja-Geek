@@ -1,34 +1,85 @@
 .catalogo {
-    padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 .catalogo__topo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .catalogo__titulo {
-    font-size: 22px;
-    font-weight: 700;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .catalogo__vertudo {
-    text-decoration: none;
-    font-weight: 700;
-    color: #2A7AE4;
+  text-decoration: none;
+  font-weight: 700;
+  color: #2a7ae4;
 }
 
 .catalogo__vertudo::after {
-    content: url(../img/catalogo-vertudo.svg);
-    padding-left: .4rem;
-    width: 10.67px;
-    height: 10.67px;
+  content: url(../img/catalogo-vertudo.svg);
+  padding-left: 0.4rem;
+  width: 10.67px;
+  height: 10.67px;
 }
 
-@media screen and (min-width:1024px) {
-    .catalogo {
-        padding: 0 9.5rem;
-    }
+.catalogo__conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalogo__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.catalogo__produto {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem 0 0;
+}
+
+.catalogo__imagem {
+  width: 176px;
+  height: 174px;
+  background-size: cover;
+}
+
+.catalogo__nome {
+  margin: 8px 0 0 0;
+  font-weight: 500;
+}
+
+.catalogo__valor {
+  margin: 8px 0 0 0;
+  font-weight: 700;
+  color: var(--texto-titulo);
+}
+
+.catalogo__link {
+  margin: 8px 0 0 0;
+  text-decoration: none;
+  color: var(--botao-azul);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 0) {
+  main {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 0 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 0 152px;
+  }
 }
