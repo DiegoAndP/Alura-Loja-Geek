@@ -1,7 +1,9 @@
+import {manipulaDados} from "./manipulaDados.js"
+
 const botaoVerProduto = document.querySelectorAll('.catalogo__link');
-const ImportaProdutos = JSON.parse(localStorage.getItem('produto'));
-const dadosProdutos = Object.values(ImportaProdutos);
-const arrayClasses = ['.popup__wrapper','.popup__close'];
+// const ImportaProdutos = JSON.parse(localStorage.getItem('produto'));
+// const dadosProdutos = Object.values(ImportaProdutos);
+const arrayClasses = ['.popup__close'];
 
 arrayClasses.forEach( el => {
     document.querySelector(el).addEventListener('click', ev => {
@@ -12,10 +14,9 @@ arrayClasses.forEach( el => {
 botaoVerProduto.forEach(el => {
     el.addEventListener('click', ev => {
         ev.preventDefault();
+        const produtoId = ev.composedPath()[2].attributes[1].value;
 
-        const produtoId = ev.path[2].attributes[1].value;
-
-        adicionaValoresPopup(recebeValoresPopup(dadosProdutos,produtoId));
+        adicionaValoresPopup(recebeValoresPopup(manipulaDados.valores('produto'),produtoId));
       })
     })
 

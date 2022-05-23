@@ -7,8 +7,9 @@
     background-image: url(../img/banner1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    mask-image:linear-gradient(rgba(0, 0, 0, 0.2));
-    height: 192px;
+    background-position: center;
+    width: 100vw;
+    align-self: center;
 }
 
 .destaques__info {
@@ -45,7 +46,7 @@
 @media screen and (min-width:0) {
 
     .destaques__slide {
-        background-position-y: -30px;
+        height: 192px;
     }
 
     .destaques__info {
@@ -57,8 +58,6 @@
 @media screen and (min-width:768px) {
     .destaques__slide {
         height: 352px;
-        background-position-y: -90px;
-
     }
 
     .destaques__info {
@@ -75,13 +74,8 @@
 }
 
 @media screen and (min-width: 1024px) {
-
-    .destaques__slide {
-        background-position-y: -300px;
-    }
-
     .destaques__info {
-        padding-left: 9.5rem;
+        padding-left: 3rem;
     }
 
 }

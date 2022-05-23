@@ -1,5 +1,6 @@
-const nomeLogin = document.querySelector('.topo__botao');
+import { manipulaDados } from "./modulos/manipulaDados";
 
+const nomeLogin = document.querySelector('.topo__botao');
 
 window.addEventListener('load', (e) => {
    e.target.querySelector('.topo__botao').textContent = 'Administrador';
@@ -14,7 +15,7 @@ botaoAdicionaProduto.addEventListener('click',(element)=> {
    const checaValidity = [];
    const formulario = document.querySelector('.adiciona__form');
    const inputs = formulario.querySelectorAll('input');
-   const textArea = formulario.querySelector('textarea').value;
+   const textArea = formulario.querySelector('.adiciona__textarea').value;
 
    inputs.forEach(el => checaValidity.push(el.validity.valid));
    if(checaValidity.every(valid => valid == true)) {
@@ -25,7 +26,7 @@ botaoAdicionaProduto.addEventListener('click',(element)=> {
 
 function guardaProduto (inputs, textArea) {
 
-   const listaProduto = JSON.parse(localStorage.getItem('produto')) || [];
+   const listaProduto = manipulaDados('produto') || [];
    const descricaoAlt = () => {
       const textoAlt = "Descrição ainda precisa ser adicionada.";
    
@@ -47,7 +48,7 @@ function guardaProduto (inputs, textArea) {
 
 
    listaProduto.push(produto);   
-   localStorage.setItem('produto', JSON.stringify(listaProduto));
-   window.location.href ="./sucesso.html";
+   manipulaDados.exporta('produto', listaProduto);
+   // window.location.href ="./sucesso.html";
 
 }

@@ -1,0 +1,153 @@
+.geral__container {
+    margin: 32px 0 16px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.geral__titulo {
+    font-weight: 700;
+    color: var(--texto-titulo);
+}
+
+.geral__adicionar {
+    color: var(--branco);
+    font-weight: 600;
+    size: 14px;
+    background-color: var(--botao-azul);
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.geral__container-produtos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.geral__container {
+    display: flex;
+    flex-flow: row wrap;
+}
+.geral__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.geral__imagem {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.geral__botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 11px 11px 0 0;
+}
+
+.geral__botao-deleta {
+    background-image: url("/assets/img/trashicon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 24px;
+    height: 18px;
+    width: 14px;
+}
+
+.geral__botao-deleta:hover {
+    cursor: pointer;
+}
+
+.geral__botao-edita {
+    background-image: url("/assets/img/editicon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18px;
+    width: 18px;
+}
+
+.geral__botao-edita:hover {
+    cursor: pointer;
+}
+
+.geral__info {
+    text-align: left;
+}
+
+.geral__info-nome {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--texto-titulo);
+}
+
+.geral__info-valor {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--texto-titulo);
+}
+
+.geral__info-valor::before {
+    content: "R$ ";
+}
+
+.geral__info-id {
+    color: var(--texto-titulo);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.geral__info-id::before {
+    content: "#ID: ";
+}
+
+@media screen and (min-width:0) {
+    .geral__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .geral__titulo {
+        font-size: 22px;
+    }
+
+    .geral__adicionar {
+        padding: 12px 16px;
+    }
+
+    .geral__imagem {
+        width: 140px;
+        height: 250px;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .geral__container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .geral__imagem {
+        width: 164px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .geral__titulo {
+        font-size: 32px;
+    }
+    .geral__adicionar {
+        padding: 1rem;
+    }
+
+    .geral__imagem {
+        width: 176px;
+    }
+}

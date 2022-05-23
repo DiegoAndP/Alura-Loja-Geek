@@ -1,7 +1,7 @@
 `<div" class="catalogo__conteudo">
     <div class="catalogo__topo">
         <h2 class="catalogo__titulo">{descricao}</h2>
-        <a class="catalogo__vertudo" href="">Ver tudo</a>
+        <a class="catalogo__vertudo" href="geral.html">Ver tudo</a>
     </div>
     <div class="catalogo__produto produto-starwars">
         <div class="catalogo__imagem">
@@ -38,7 +38,7 @@ function alimentaCategorias(produtos) {
         sessoes[id].innerHTML = `<div" class="catalogo__conteudo">
                 <div class="catalogo__topo">
                     <h2 class="catalogo__titulo">${el.categoria}</h2>
-                    <a class="catalogo__vertudo" href="">Ver tudo</a>
+                    <a class="catalogo__vertudo" href="/geral.html">Ver tudo</a>
                 </div>
                 <div class="catalogo__wrapper"></div>`;
       }

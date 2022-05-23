@@ -1,12 +1,13 @@
+import { criaContato,criaDestaques,criaHeader,criaSobre } from "./modulos/geraPagina.js";
 import { validacao } from "./modulos/loginModulo.js"
-import { criaContato } from "./modulos/footer.js"
-import { criaSobre } from "./modulos/sobre.js"
-import { criaHeader } from "./modulos/header.js";
+
+if (window.location.pathname == '/index.html') {
+  criaDestaques();
+};
 
 criaHeader();
 criaContato();
 criaSobre();
-
 
 //Adiciona um escutador de eventos para cada caixa de texto
 const inputAll = document.querySelectorAll("input");
